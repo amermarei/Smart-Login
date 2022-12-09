@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700;800;900;1000&display=swap" rel="stylesheet">
+    <title>smart login</title>
+</head>
+<body>  
+  <div class="container d-flex justify-content-center align-items-center vh-100 ">
+    <div class="login-box p-4 w-50  ">
+      <h2 class="fs-1 text-white text-center fw-bold my-4 ">Login</h2>
+      <div class="mb-5">
+        <label for="exampleInputEmail1" class="form-label   fs-5">Email address</label>
+        <input type="email" class="form-control " id="signInputEmail" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label  fs-5">Password</label>
+        <input type="password" class="form-control" id="signInputPassword">
+      </div>
+      <p id="checkLogin"class="text-danger text-center fs-4 m-3"></p>
+      <div class="text-center">
+        <a id="login" class="submit my-3" href="#" >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login 
+        </a>
+        <p class="lead  text-white-50 ">Don't have an account?  <a href="sign.html" class="text-decoration-none fw-bold text-white-50">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

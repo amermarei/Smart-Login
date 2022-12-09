@@ -1,0 +1,173 @@
+
+body {
+    font-family: 'Cairo', sans-serif;
+  	background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+a {
+    cursor: pointer;
+    transition: .5s;
+}
+a:hover{
+    color: #fff !important;
+}
+h1 {
+    font-size:60px;
+}
+
+/*  home styling */
+#About-me {
+  padding: 10% 10%;
+  background:#216c79;
+  background:-webkit-linear-gradient(#216c79,rgb(14, 22, 36));
+  background:-moz-linear-gradient(#216c79,rgb(14, 22, 36));
+  background:-o-linear-gradient(#216c79,rgb(14, 22, 36)); 
+  color: white;
+  font-size: 1.2em;
+}
+
+header  .img img {
+    animation-name: motion;
+    animation-duration: 3s;
+    animation:motion 3s linear infinite alternate;
+}
+@media (max-width:991px) {
+    .landing .container .image img  {
+       display: none;
+    }
+}
+@keyframes motion {
+    from {
+        transform: translatey(30px);
+    }
+    to {
+        transform: translatey(  -30px);
+    }
+}
+/* end home styling */
+
+.login-box {
+    border-radius: 20px;
+    background: rgba(0,0,0,.2);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+.form-control {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.753) !important;
+    box-shadow: none !important;
+    caret-color: #03e9f4;
+    transition:label .5s;
+    color: white !important;
+    
+}
+.form-label{
+    color:#03e9f4 !important ;
+}
+.login-box  .submit {
+  position: relative;
+  display:inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px
+}
+
+.login-box .submit:hover {
+  background: #03e8f4af;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #03e8f47e,
+            0 0 5px #03e8f47e,
+            0 0 5px #03e8f47e, 
+            0 0 5px #03e8f47e;
+}
+
+.login-box .submit span {
+  position: absolute;
+  display: block;
+}
+
+.login-box .submit span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box .submit span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box .submit span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box .submit span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}

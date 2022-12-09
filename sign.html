@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700;800;900;1000&display=swap" rel="stylesheet">
+    <title>smart login</title>
+</head>
+<body>  
+  <div class="container d-flex justify-content-center align-items-center vh-100 ">
+    <div class="login-box p-4 w-50  ">
+      <h2 class="fs-1 text-white text-center fw-bold my-4 ">Sign Up</h2>
+      <div class="mb-4">
+        <label class="form-label   fs-5">Name</label>
+        <input id="InputName" type="text" class="form-control ">
+        <div id="NameAlert" class="form-text text-danger d-none">3 char at least</div>
+      </div>
+      <div class="mb-4">
+        <label for="InputEmail" class="form-label   fs-5">Email address</label>
+        <input type="email" class="form-control " id="InputEmail" >
+        <div id="emailAlert" class="form-text text-danger d-none">john@example.com</div>
+      </div>
+      <div class="mb-3">
+        <label for="InputPassword" class="form-label  fs-5">Password</label>
+        <input type="password" class="form-control" id="InputPassword">
+        <div id="passwordAlert" class="form-text text-danger d-none">6 char at least </div>
+      </div>
+      <p id="check"class="text-danger text-center fs-4 m-3"></p>
+      <div class="text-center">
+        <a id="signup" class="submit my-3" href="#" >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign Up
+        </a>
+        <p class="lead text-white-50">You have an account? <a class="text-decoration-none fw-bold text-white-50" href="index.html">Sign In</a> </p>
+      </div>
+    </div>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sign.js"></script>
+</body>
+</html>
